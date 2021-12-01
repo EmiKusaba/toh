@@ -19,8 +19,10 @@ const printStacks = () => {
   console.log("c: " + stacks.c);
 }
 
-const movePiece = () => {
-  // Your code here
+const movePiece = (startStack, endStack) {
+  startStack = stacks[startStack];
+  endStack = stacks[endStack];
+  endStack.push(startStack.pop());
 
 }
 
